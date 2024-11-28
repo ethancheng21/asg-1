@@ -26,3 +26,17 @@ function showSlide(index) {
 }
 
 showSlide(currentSlide);
+
+// Get reference to the profile icon
+const profileIcon = document.getElementById("profile-icon");
+
+// Register function
+function register() {
+    alert("You are now a member! Please sign in again."); // Show popup message
+}
+
+// Login function
+function login() {
+    alert("You are now signed into the website!"); // Show popup message
+    profileIcon.src = "c:\\Users\\ethan\\Downloads\\Metro_Boomin_–_Not_All_Heroes_Wear_Capes.png"; // Change to logged-in image
+}

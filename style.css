@@ -4,7 +4,12 @@
     margin-left: auto;
     margin-right: auto;
 }
-
+.header {
+    position: relative;         /* Enables absolute positioning for child elements */
+    display: flex;
+    align-items: center;        /* Vertically center the logo */
+    justify-content: center;    /* Horizontally center the logo */
+}
 body {
     background-color: black;
     color: #FFB70D; 
@@ -108,4 +113,15 @@ input::placeholder {
 }
 h2{
     text-align: right;
+}
+.profile-icon {
+    position: absolute;         /* Position relative to the header */
+    top: 40px;                  /* Offset from the top of the header */
+    right: 40px;                /* Offset from the right of the header */
+    width: 125px;                /* Set icon size */
+    height: 125px;
+    border-radius: 50%;         /* Make the icon circular */
+    cursor: pointer;            /* Show pointer cursor on hover */
+    border: 2px solid #FFD700;     /* Outline with a light gray color */
+
 }

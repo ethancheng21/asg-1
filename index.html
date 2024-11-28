@@ -6,11 +6,13 @@
   </head>
 <body>
     <!--logo-->
-    <img src="c:\Users\ethan\Downloads\kanye-west-bear-logo.png" class = "logo">
+    <div class="header">
+        <img src="c:\Users\ethan\Downloads\kanye-west-bear-logo.png" class = "logo">
+        <img id="profile-icon" src= "c:\Users\ethan\Downloads\default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" class="profile-icon">
+    </div>
     <div class="container">
         <h1>
             <a href="about us.html" class="about-link">ABOUT US</a>
-        </h1>
         <h1>MERCH</h1>
         <h1>TICKET</h1>
     </div>
@@ -32,13 +34,13 @@
     <div class="login">
         <div class="email-group">
             <label for="email">Email:</label>
-            <input type="email" name="email" placeholder="Enter your email">
+            <input type="email" name="email1" id="email" placeholder="Enter your email">
         </div>
         <div class="password-group">
             <label for="password1">Password :</label>
             <input type="password" id="password1" name="password1" placeholder="Enter your password">
         </div>
-        <button class="signup-button">Register</button>
+        <button class="signup-button" onclick="register()">Register</button>
     </div>
 
 
@@ -57,7 +59,7 @@
             <label for="password2">Password :</label>
             <input type="password" id="password2" name="password2" placeholder="Enter your password">
         </div>
-        <button class="login-button">Log in</button>
+        <button class="login-button" onclick="login()">Log in</button>
     </div>
     <h2> ©2024 UMG Records All Rights Reserved </h2>
     <script src="script.js"></script>

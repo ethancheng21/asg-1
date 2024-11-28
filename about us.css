@@ -77,3 +77,26 @@ a:hover{
     text-decoration: underline; 
     color: #FFD700;     
 }
+/* Social icons container */
+.social-icons {
+    display: flex;                 /* Align icons horizontally */
+    justify-content: center;       /* Center-align icons in the image box */
+    gap: 20px;                     /* Space between icons */
+    margin-top: 15px;              /* Add space above the icons */
+  }
+  
+  /* Styling for each social icon */
+  .social-icons img {
+    width: 80px;                   /* Fixed width for all icons */
+    height: 80px;                  /* Fixed height for all icons */
+    object-fit: cover;             /* Ensure the image scales properly */
+    transition: transform 0.2s;    /* Smooth hover effect */
+    cursor: pointer;               /* Pointer cursor on hover */
+    background-color: white;
+  }
+  
+  /* Hover effect to enlarge icons slightly */
+  .social-icons img:hover {
+    transform: scale(1.2);         /* Enlarge icon on hover */
+  }
+  
