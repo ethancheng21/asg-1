@@ -1,0 +1,79 @@
+.logo{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: black;
+    color: #FFB70D; /* Set text color to white for better contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    font-family: 'Bebas Neue', sans-serif;
+}
+.slide {
+    display: none;
+    width: 100%;
+}
+
+/* Style for the previous and next buttons */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFB70D;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+.p-info{
+    width: 700px;          /* Fixed width */
+    max-width: 90%;        /* Ensures it doesn't exceed 90% of the screen width */
+    font-size: 20px;       /* Adjusts text size */
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.image-box {
+    width: 35%;               /* Set box width */
+    padding: 10px;              /* Space inside the box */
+    border: 2px solid #ccc;     /* Add a border around the box */
+    border-radius: 10px;        /* Rounded corners */
+    text-align: center;         /* Center-align content inside the box */
+    margin-left: 40px;
+    margin-top:20px;    /* Center the box horizontally */
+    margin-bottom: 400px;
+    float: left; 
+}
+.image-box img {
+    width: 100%;                /* Make the image responsive */
+    border-radius: 10px;        /* Match the container's rounded corners */
+}
+.image-box p {
+    margin-top: 5px;           /* Space between image and text */      /* Adjust text size */
+    color: #FFB70D;                /* Text color */
+    font-size: 30px;
+}
+a{
+    color: #FFB70D;
+    text-decoration: none
+}
+a:hover{
+    text-decoration: underline; 
+    color: #FFD700;     
+}

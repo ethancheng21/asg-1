@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <!--logo-->
+    <img src="c:\Users\ethan\Downloads\kanye-west-bear-logo.png" class = "logo">
+    <div class="container">
+        <h1>
+            <a href="about us.html" class="about-link">ABOUT US</a>
+        </h1>
+        <h1>MERCH</h1>
+        <h1>TICKET</h1>
+    </div>
+    <!--slideshow-->
+    <div class="slideshow-container">
+        <img src="c:\Users\ethan\Downloads\concertimage.png" class="slide">
+        <img src="c:\Users\ethan\Downloads\yeglow.png" class="slide">
+        <img src="c:\Users\ethan\Downloads\yeconcert.png" class="slide">
+        <button class="prev arrow-button" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next arrow-button" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+
+
+    <!--sign up buttons,header-->
+    <div class = "login_header">
+        <h2>Sign up</h2>
+    </div>
+    <div class="login">
+        <div class="email-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="password-group">
+            <label for="password1">Password :</label>
+            <input type="password" id="password1" name="password1" placeholder="Enter your password">
+        </div>
+        <button class="signup-button">Register</button>
+    </div>
+
+
+
+    <!--login buttons,header-->
+    <div class = "login_header">
+        <h2>Log in</h2>
+    </div>
+
+    <div class="login">
+        <div class="email-group">
+            <label for="email2">Email :</label>
+            <input type="email" id="email2" name="email2" placeholder="Enter your email">
+        </div>
+        <div class="password-group">
+            <label for="password2">Password :</label>
+            <input type="password" id="password2" name="password2" placeholder="Enter your password">
+        </div>
+        <button class="login-button">Log in</button>
+    </div>
+    <h2> ©2024 UMG Records All Rights Reserved </h2>
+    <script src="script.js"></script>
+</body>
+</html>

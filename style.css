@@ -1,0 +1,111 @@
+.logo{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: black;
+    color: #FFB70D; 
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    font-family: 'Bebas Neue', sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly; /* Distributes space evenly between and around items */
+    width: 100%;
+}
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    padding-bottom: 20px;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Hide all images by default */
+.slide {
+    display: none;
+    width: 100%;
+}
+
+/* Style for the previous and next buttons */
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFB70D;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.login{
+    display: flex;
+    flex-direction: column;     
+    gap: 15px;                 
+    margin-bottom: 20px;
+}
+.login_header{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+label {
+    width: 70px;                 
+    padding: 20px;
+}
+input {
+    flex: 1;                      
+    padding: 10px;                 
+    font-size: 16px;
+}
+.email-group,.password-group{
+    display: flex; 
+    align-items: center; 
+    margin-right: 15px; 
+}
+
+.signup-button,.login-button {
+    padding: 12px 20px;               
+    font-size: 16px;                  
+    background-color:#FFB70D ;        
+    border-radius: 5px;              
+    cursor: pointer;                
+    width: 300px;                   
+    display: block;                 
+    margin: 20px auto;               
+    text-align: center;              
+    position: relative;
+    color: white; 
+}
+input::placeholder {
+    color: #FFB70D; 
+    font-family: 'Bebas Neue', sans-serif;
+}
+.about-link {
+    color: #FFB70D;         
+    text-decoration: none; 
+    font-weight: bold;      
+}
+.about-link:hover {
+    text-decoration: underline; 
+    color: #FFD700;             
+}
+h2{
+    text-align: right;
+}
