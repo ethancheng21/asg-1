@@ -2,32 +2,50 @@
 body {
     background-color: black;  /* Black background */
     color: #FFB70D;  /* Gold text color */
-    font-family: 'Bebas Neue', sans-serif;  /* Font family for the entire page */
+    font-family: 'Bebas Neue', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Logo Styles */
+/* Header Layout */
+/* Header */
+.header {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%;
+    position: relative; /* Allow absolute positioning for profile icon */
+    margin-top: 40px;
+}
+
+/* Logo */
 .logo {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 800px;   /* Set logo size */
+    height: auto;   /* Maintain aspect ratio */
+    margin-top: 30px;  /* Adjusted to move logo slightly down */
+    margin-bottom: 20px;  /* Add space between logo and next elements */
 }
 
+/* Profile Icon */
 .profile-icon {
-    position: absolute;         /* Position relative to the header */
-    top: 40px;                  /* Offset from the top of the header */
-    right: 40px;                /* Offset from the right of the header */
-    width: 125px;               /* Set icon size */
+    position: absolute;
+    top: -15px;  /* Move the profile icon up */
+    right: 15px;  /* Move the profile icon to the right */
+    width: 125px;
     height: 125px;
-    border-radius: 50%;         /* Make the icon circular */
-    cursor: pointer;            /* Show pointer cursor on hover */
-    border: 2px solid #FFD700;  /* Outline with a gold color */
+    border-radius: 50%; /* Make the profile icon circular */
+    cursor: pointer;
+    border: 2px solid #FFD700; /* Add border */
 }
+
+
 .image-box-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 items per row */
+    grid-template-columns: repeat(3, 1fr);  /* 3 items per row by default */
     gap: 20px; /* Space between the boxes */
     padding: 20px;
     justify-items: center;  /* Center the grid items */
@@ -114,7 +132,90 @@ p {
 .view-cart-button:hover {
     background-color: #FFD700; /* Lighter gold color on hover */
 }
+
 h2 {
     text-align: right;
     padding-right: 20px;
+}
+
+/* Mobile Responsiveness - 2 image boxes per row */
+@media(max-width: 768px) {
+    .image-box-container {
+        grid-template-columns: repeat(2, 1fr);  /* 2 items per row on mobile */
+    }
+
+    .image-box {
+        width: 250px; /* Adjust image box size for mobile */
+        height: 300px; /* Adjust height for mobile */
+    }
+
+    .logo {
+        width: 80%;             /* Make logo take up 80% of the width */
+        max-width: 600px;       /* Set a max-width to prevent logo from becoming too big */
+        margin-top: 40px;       /* Space from the top */
+        margin-bottom: 20px;    /* Space below the logo */
+    }
+
+    .profile-icon {
+        top: -15px; /* Adjust this value */
+        right: 15px; /* Reduce this value */
+        width: 80px;
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 40px;  /* Adjust heading size for mobile */
+    }
+
+    h2 {
+        text-align: right;
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .view-cart-button {
+        font-size: 16px;  /* Adjust button text size for mobile */
+    }
+
+    .add-to-cart-button {
+        font-size: 12px;  /* Adjust button text size for mobile */
+    }
+
+    .signup-button,
+    .login-button,
+    .logout-button {
+        width: 80%; /* Make buttons more mobile-friendly */
+        font-size: 22px;  /* Adjust font size on mobile */
+    }
+
+    input {
+        width: 80%; /* Adjust input fields for mobile */
+        font-size: 20px;  /* Adjust font size on mobile */
+    }
+
+    .about-us-page .section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about-us-page .p-info {
+        padding-right: 0;
+        width: 90%; /* Ensure the paragraph is more responsive */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .slideshow-container {
+        width: 100%;  /* Ensure slideshow fills full width */
+        height: auto;
+    }
+
+    .image-box {
+        width: 90%; /* Make image box smaller on mobile */
+        margin: 20px auto;
+    }
 }

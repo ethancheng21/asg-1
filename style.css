@@ -53,14 +53,13 @@ h1 {
     font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 20px;
     margin: 0;
-    font-size: 36px;  /* Increased font size */
+    font-size: 50px;  /* Increased font size */
 }
 
 .about-link {
     color: #FFB70D;
     text-decoration: none;
     font-weight: bold;
-    font-size: 32px;  /* Increased font size */
 }
 
 .about-link:hover {
@@ -215,7 +214,7 @@ h2 {
     }
 
     h1 {
-        font-size: 32px;  /* Adjust heading size for mobile */
+        font-size: 40px;  /* Adjust heading size for mobile */
     }
 
     h2 {
