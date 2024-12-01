@@ -9,40 +9,43 @@
 <body>
 
     <!-- Header with Logo and Profile Icon -->
-    <div class="header">
-        <a href="index.html" onclick="loadPageData()"> <!-- Add loadPageData() if needed -->
-            <img src="c:/Users/ethan/Downloads/kanye-west-bear-logo.png" class="logo">
-        </a>
+    <a href="index.html" class="header"> <!-- Add loadPageData() if needed -->
+        <img src="c:/Users/ethan/Downloads/kanye-west-bear-logo.png" class="logo">
         <img id="profile-icon" src="c:/Users/ethan/Downloads/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" class="profile-icon">
-    </div>
+    </a>
 
     <!-- Search Bar -->
     <div class="search-bar">
         <input type="text" id="search" placeholder="Search for concerts...">
     </div>
 
-    <!-- Concert Listings Table -->
-    <table id="concert-table">
-        <thead>
-            <tr>
-                <th>Concert Name</th>
-                <th>Date</th>
-                <th>Location</th>
-                <th>Price</th>
-                <th>Seating</th>
-                <th>Quantity</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="concert-table-body">
-            <!-- Concert rows will be dynamically added here -->
-        </tbody>
-    </table>
-       <!-- Cart Button -->
+    <!-- Concert Listings Table with Scrollable Container -->
+    <div class="table-container">
+        <table id="concert-table">
+            <thead>
+                <tr>
+                    <th>Concert Name</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                    <th>Seating</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="concert-table-body">
+                <!-- Concert rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Cart Button -->
     <div class="cart-button-container">
         <a href="cart.html" class="view-cart-button">View Cart</a>
     </div>
+
     <h2> ©2024 UMG Records All Rights Reserved </h2>
+
     <script src="concert.js"></script>
 </body>
 </html>
