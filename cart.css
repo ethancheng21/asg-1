@@ -1,12 +1,11 @@
 body {
     background-color: black;
-    color: #FFB70D; /* Set text color to gold for better contrast */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    color: #FFB70D;
+    margin: 0;
+    padding: 0;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Logo Styles */
 .logo {
     position: relative;
     display: block;
@@ -14,17 +13,17 @@ body {
     margin-right: auto;
 }
 
-/* Profile Icon Styles */
 .profile-icon {
-    position: absolute; /* Position relative to the header */
-    top: 40px; /* Offset from the top of the header */
-    right: 40px; /* Offset from the right of the header */
-    width: 125px; /* Set icon size */
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 125px;
     height: 125px;
-    border-radius: 50%; /* Make the icon circular */
-    cursor: pointer; /* Show pointer cursor on hover */
-    border: 2px solid #FFD700; /* Outline with a gold color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #FFD700;
 }
+
 .header {
     display: flex;
     justify-content: center;
@@ -33,35 +32,32 @@ body {
     margin-top: 40px;
     position: relative;
 }
-/* Cart Container Styling */
+
 #cart-container {
-    width: 80%;  /* Restrict the width of the cart */
-    max-width: 1000px;  /* Max width to prevent it from stretching too far on large screens */
+    width: 80%;
+    max-width: 1000px;
     margin: 50px auto;
-    text-align: center; /* Center the content */
+    text-align: center;
 }
 
-/* Cart Item Styling */
 .cart-item {
     display: flex;
-    justify-content: space-between;  /* Space between item name and price */
-    margin: 10px 0;  /* Space between items */
+    justify-content: space-between;
+    margin: 10px 0;
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
-    width: 100%;  /* Set to full width of the container */
-    text-align: left; /* Align text to the left within each item */
+    width: 100%;
+    text-align: left;
 }
 
-/* Total Price Styling */
 .total-price {
     font-size: 20px;
     font-weight: bold;
     color: #FFB70D;
-    margin-top: 20px; /* Add space above the total */
+    margin-top: 20px;
 }
 
-/* Clear Cart Button Styling */
 #clear-cart-button {
     background-color: #FFB70D;
     color: white;
@@ -78,7 +74,6 @@ body {
     background-color: #FFD700;
 }
 
-/* General Styling for Cart */
 h1 {
     font-size: 24px;
     font-weight: bold;
@@ -90,54 +85,42 @@ h2 {
     padding-right: 20px;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
-    /* Adjust logo size for mobile */
     .logo {
-        width: 80%; /* Make logo take up 80% of the width */
-        max-width: 600px; /* Set a max-width to prevent logo from becoming too big */
-        margin-top: 40px; /* Space from the top */
-        margin-bottom: 20px; /* Space below the logo */
+        width: 80%;
+        max-width: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     .profile-icon {
-        top: -10px; /* Adjust this value */
-        right: 10px; /* Reduce this value */
+        top: -10px;
+        right: 10px;
         width: 50px;
         height: 50px;
     }
-    /* Cart Container Styling for Mobile */
     #cart-container {
-        width: 95%;  /* Increase width for smaller screens */
-        margin: 20px auto;  /* Reduce margin for mobile */
-        padding: 10px; /* Add padding for better mobile spacing */
+        width: 95%;
+        margin: 20px auto;
+        padding: 10px;
     }
-
-    /* Adjust Cart Item Styling */
     .cart-item {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        text-align: center;  /* Center-align text for better layout */
-        padding: 15px;  /* Add padding for better spacing */
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
     }
-
-    /* Adjust Total Price Styling */
     .total-price {
-        font-size: 18px; /* Slightly smaller font for mobile */
+        font-size: 18px;
     }
-
-    /* Adjust Clear Cart Button */
     #clear-cart-button {
-        width: 100%;  /* Make button full width on mobile */
-        font-size: 14px;  /* Smaller font for mobile */
-        padding: 12px;  /* Adjust padding */
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
     }
-
-    /* Heading Styles for Mobile */
     h1 {
-        font-size: 20px; /* Adjust heading size for mobile */
+        font-size: 20px;
     }
-
     h2 {
-        font-size: 14px;  /* Smaller font for copyright text */
-        padding-right: 10px;  /* Less padding */
+        font-size: 14px;
+        padding-right: 10px;
     }
 }

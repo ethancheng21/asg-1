@@ -1,13 +1,11 @@
-/* Global Styles */
 body {
     background-color: black;
-    color: #FFB70D; /* Set text color to gold for better contrast */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    color: #FFB70D;
+    margin: 0;
+    padding: 0;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Logo Styles */
 .logo {
     position: relative;
     display: block;
@@ -15,17 +13,17 @@ body {
     margin-right: auto;
 }
 
-/* Profile Icon Styles */
 .profile-icon {
-    position: absolute; /* Position relative to the header */
-    top: 40px; /* Offset from the top of the header */
-    right: 40px; /* Offset from the right of the header */
-    width: 125px; /* Set icon size */
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 125px;
     height: 125px;
-    border-radius: 50%; /* Make the icon circular */
-    cursor: pointer; /* Show pointer cursor on hover */
-    border: 2px solid #FFD700; /* Outline with a gold color */
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #FFD700;
 }
+
 .header {
     display: flex;
     justify-content: center;
@@ -35,7 +33,6 @@ body {
     position: relative;
 }
 
-/* Search Bar */
 .search-bar {
     margin: 20px;
     text-align: center;
@@ -49,7 +46,6 @@ body {
     border: 1px solid #FFD700;
 }
 
-/* Table Styling */
 #concert-table {
     width: 90%;
     margin: 20px auto;
@@ -85,7 +81,6 @@ body {
     background-color: #FFC107;
 }
 
-/* Seating Dropdown and Quantity Styling */
 .select-seating, .quantity-input {
     padding: 6px;
     font-size: 14px;
@@ -97,84 +92,68 @@ body {
     margin-right: 10px;
 }
 
-/* View Cart Button */
 .view-cart-button {
     background-color: #FFD700;
     color: black;
-    padding: 8px 16px; /* Reduced padding for smaller size */
+    padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px;
     font-weight: bold;
     display: block;
-    margin: 10px auto; /* Adjusted margin for spacing */
-    width: fit-content; /* Ensures the button size adjusts to content */
+    margin: 10px auto;
+    width: fit-content;
 }
 
 .view-cart-button:hover {
-    background-color: #FFC107; /* Lighter gold color on hover */
+    background-color: #FFC107;
 }
 
-/* Heading Styles */
 h2 {
     text-align: right;
     padding-right: 20px;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
-    /* Adjust logo size for mobile */
     .logo {
-        width: 80%; /* Make logo take up 80% of the width */
-        max-width: 600px; /* Set a max-width to prevent logo from becoming too big */
-        margin-top: 40px; /* Space from the top */
-        margin-bottom: 20px; /* Space below the logo */
+        width: 80%;
+        max-width: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
     .profile-icon {
-        top: -10px; /* Adjust this value */
-        right: 10px; /* Reduce this value */
+        top: -10px;
+        right: 10px;
         width: 50px;
         height: 50px;
     }
-
-    /* Search bar input width */
     .search-bar input {
-        width: 80%; /* Increase width for mobile view */
-        font-size: 14px; /* Adjust font size */
+        width: 80%;
+        font-size: 14px;
     }
-
-    /* Table Container Styling for Horizontal Scrolling */
     .table-container {
-        overflow-x: auto; /* Allow horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
-
     #concert-table {
-        width: 100%; /* Full width table on small screens */
+        width: 100%;
     }
-
     #concert-table th, #concert-table td {
-        padding: 8px; /* Reduce padding for better spacing */
+        padding: 8px;
     }
-
-    /* Button and input fields on smaller screens */
     #concert-table button {
-        font-size: 12px; /* Smaller button font */
-        padding: 6px 12px; /* Adjust button padding */
+        font-size: 12px;
+        padding: 6px 12px;
     }
-
     .select-seating, .quantity-input {
-        font-size: 12px; /* Smaller font size */
-        padding: 4px; /* Reduced padding */
+        font-size: 12px;
+        padding: 4px;
     }
-
-    /* View Cart Button */
     .view-cart-button {
-        font-size: 12px; /* Smaller font size for mobile */
-        padding: 6px 12px; /* Reduced padding */
+        font-size: 12px;
+        padding: 6px 12px;
     }
-
     h2 {
-        padding-right: 10px; /* Less padding for smaller screens */
+        padding-right: 10px;
     }
 }
