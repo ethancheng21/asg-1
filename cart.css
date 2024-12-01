@@ -1,33 +1,38 @@
-/* Body Background and Text Color */
 body {
-    background-color: black;  /* Black background */
-    color: #FFB70D;  /* Gold text color */
-    font-family: 'Bebas Neue', sans-serif;  /* Font family for the entire page */
-    margin: 0;
-    padding: 0;
+    background-color: black;
+    color: #FFB70D; /* Set text color to gold for better contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Logo Styling */
+/* Logo Styles */
 .logo {
     position: relative;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
 }
 
-/* Profile Icon Styling */
+/* Profile Icon Styles */
 .profile-icon {
-    position: absolute;         /* Position relative to the header */
-    top: 40px;                  /* Offset from the top of the header */
-    right: 40px;                /* Offset from the right of the header */
-    width: 125px;               /* Set icon size */
+    position: absolute; /* Position relative to the header */
+    top: 40px; /* Offset from the top of the header */
+    right: 40px; /* Offset from the right of the header */
+    width: 125px; /* Set icon size */
     height: 125px;
-    border-radius: 50%;         /* Make the icon circular */
-    cursor: pointer;            /* Show pointer cursor on hover */
-    border: 2px solid #FFD700;  /* Outline with a gold color */
+    border-radius: 50%; /* Make the icon circular */
+    cursor: pointer; /* Show pointer cursor on hover */
+    border: 2px solid #FFD700; /* Outline with a gold color */
 }
-
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
 /* Cart Container Styling */
 #cart-container {
     width: 80%;  /* Restrict the width of the cart */
@@ -79,7 +84,60 @@ h1 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 h2 {
     text-align: right;
     padding-right: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Adjust logo size for mobile */
+    .logo {
+        width: 80%; /* Make logo take up 80% of the width */
+        max-width: 600px; /* Set a max-width to prevent logo from becoming too big */
+        margin-top: 40px; /* Space from the top */
+        margin-bottom: 20px; /* Space below the logo */
+    }
+    .profile-icon {
+        top: -10px; /* Adjust this value */
+        right: 10px; /* Reduce this value */
+        width: 50px;
+        height: 50px;
+    }
+    /* Cart Container Styling for Mobile */
+    #cart-container {
+        width: 95%;  /* Increase width for smaller screens */
+        margin: 20px auto;  /* Reduce margin for mobile */
+        padding: 10px; /* Add padding for better mobile spacing */
+    }
+
+    /* Adjust Cart Item Styling */
+    .cart-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;  /* Center-align text for better layout */
+        padding: 15px;  /* Add padding for better spacing */
+    }
+
+    /* Adjust Total Price Styling */
+    .total-price {
+        font-size: 18px; /* Slightly smaller font for mobile */
+    }
+
+    /* Adjust Clear Cart Button */
+    #clear-cart-button {
+        width: 100%;  /* Make button full width on mobile */
+        font-size: 14px;  /* Smaller font for mobile */
+        padding: 12px;  /* Adjust padding */
+    }
+
+    /* Heading Styles for Mobile */
+    h1 {
+        font-size: 20px; /* Adjust heading size for mobile */
+    }
+
+    h2 {
+        font-size: 14px;  /* Smaller font for copyright text */
+        padding-right: 10px;  /* Less padding */
+    }
 }

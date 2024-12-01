@@ -1,3 +1,4 @@
+// Function to load the profile image from localStorage
 function loadPageData() {
     const profileImage = localStorage.getItem("profileImage");
 
@@ -12,7 +13,6 @@ function loadPageData() {
 
 // Call this function when the page loads to ensure the correct profile image is displayed
 document.addEventListener("DOMContentLoaded", loadPageData);
-
 
 // Function to display the cart items on the cart page
 function displayCart() {
@@ -36,7 +36,7 @@ function displayCart() {
     cart.forEach(item => {
         cartHTML += `
             <div class="cart-item">
-                <span>${item.name}</span>
+                <span>${item.name} x${item.quantity}</span>
                 <span>$${item.price.toFixed(2)}</span>
             </div>
         `;
