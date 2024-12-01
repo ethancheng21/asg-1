@@ -76,3 +76,19 @@ Media
 ![alt text](image-22.png)
 Acknowledgements
 I received inspiration for this project from Metallica and Imagine Dragons
+
+
+
+User Audience, Intent, and Purpose
+The website is designed for fans and customers interested in purchasing merchandise and Tickets. The primary audience includes music lovers, concertgoers, and fans of the band, who are looking for a streamlined way to access products, stay connected with the band’s latest events, and make purchases conveniently.
+
+The website caters to:
+
+Fans of the band Kanye West who want to stay updated with the latest merch and events.
+People interested in purchasing band-related merchandise like clothing, accessories, and other memorabilia.
+Concertgoers looking for a simple way to buy tickets for upcoming events.
+Users looking for an easy and enjoyable shopping experience, from browsing products to completing their purchases.
+The value it provides to users:
+
+Convenience: Users can easily browse and purchase merchandise and tickets from one platform, saving time and effort.
+Engagement: Links to social media profiles and interactive features allow users to stay connected with the band Kanye West and other fans.
