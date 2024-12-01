@@ -1,45 +1,86 @@
-.logo{
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.header {
-    position: relative;         /* Enables absolute positioning for child elements */
-    display: flex;
-    align-items: center;        /* Vertically center the logo */
-    justify-content: center;    /* Horizontally center the logo */
-}
+/* Global Styles */
 body {
-    background-color: black;
-    color: #FFB70D; 
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    height: 100vh; /* Make sure the body takes up the full viewport height */
+    background-color: black;  /* Black background */
+    color: #FFB70D;  /* Gold text color */
     font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+/* Header Layout */
+.header {
+    display: flex;
+    justify-content: center;  /* Center the header content */
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;  /* Adjust the spacing from the top */
+    position: relative;  /* Allow absolute positioning for the profile icon */
+}
+
+/* Logo */
+.logo {
+    width: 800px;   /* Set logo size */
+    height: auto;   /* Maintain aspect ratio */
+    margin-top: 30px;  /* Adjusted to move logo slightly down */
+    margin-bottom: 20px;  /* Add space between logo and next elements */
+}
+
+/* Profile Icon */
+.profile-icon {
+    position: absolute;
+    top: -15px;  /* Move the profile icon up */
+    right: 15px;  /* Move the profile icon to the right */
+    width: 125px;
+    height: 125px;
+    border-radius: 50%; /* Make the profile icon circular */
+    cursor: pointer;
+    border: 2px solid #FFD700; /* Add border */
+}
+
+/* Container Layout */
 .container {
     display: flex;
-    justify-content: space-evenly; /* Distributes space evenly between and around items */
+    justify-content: space-evenly; /* Distribute space evenly between and around items */
     width: 100%;
+    margin-top: 40px; /* Space between the header and container */
 }
+
 h1 {
     font-family: 'Bebas Neue', sans-serif;
     padding-bottom: 20px;
+    margin: 0;
+    font-size: 36px;  /* Increased font size */
 }
+
+.about-link {
+    color: #FFB70D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;  /* Increased font size */
+}
+
+.about-link:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+/* Slideshow Styles */
 .slideshow-container {
     position: relative;
     max-width: 100%;
+    width: 100%; /* Ensures slideshow takes full width */
     margin: auto;
 }
 
-/* Hide all images by default */
 .slide {
     display: none;
-    width: 100%;
+    width: 100%;  /* Ensure slides fill out the width */
 }
 
-/* Style for the previous and next buttons */
 .arrow-button {
     position: absolute;
     top: 50%;
@@ -48,7 +89,7 @@ h1 {
     color: #FFB70D;
     border: none;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 50px;  /* Increased font size for arrow buttons */
     transform: translateY(-50%);
 }
 
@@ -59,69 +100,129 @@ h1 {
 .next {
     right: 0;
 }
-.login{
+
+/* Auth Section Styles */
+#auth-section {
     display: flex;
-    flex-direction: column;     
-    gap: 15px;                 
-    margin-bottom: 20px;
-}
-.login_header{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
-}
-label {
-    width: 70px;                 
-    padding: 20px;
-}
-input {
-    flex: 1;                      
-    padding: 10px;                 
-    font-size: 16px;
-}
-.email-group,.password-group{
-    display: flex; 
-    align-items: center; 
-    margin-right: 15px; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.signup-button,.login-button {
-    padding: 12px 20px;               
-    font-size: 16px;                  
-    background-color:#FFB70D ;        
-    border-radius: 5px;              
-    cursor: pointer;                
-    width: 300px;                   
-    display: block;                 
-    margin: 20px auto;               
-    text-align: center;              
-    position: relative;
-    color: white; 
+.login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Increased space between elements */
+    margin-bottom: 20px;
+    align-items: center;
 }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 20px;  /* Increased font size for input fields */
+    width: 450px;
+    height: 50px;  /* Slightly taller inputs */
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    color: #FFB70D;
+    background-color: #000;
+}
+
+.signup-button,
+.login-button,
+.logout-button {
+    padding: 15px 25px;  /* Larger padding for buttons */
+    background-color: #FFB70D;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;  /* Increased font size for buttons */
+}
+
+.signup-button:hover,
+.login-button:hover,
+.logout-button:hover {
+    background-color: #FFD700;
+}
+
 input::placeholder {
-    color: #FFB70D; 
+    color: #FFB70D;
     font-family: 'Bebas Neue', sans-serif;
 }
-.about-link {
-    color: #FFB70D;         
-    text-decoration: none; 
-    font-weight: bold;      
-}
-.about-link:hover {
-    text-decoration: underline; 
-    color: #FFD700;             
-}
-h2{
-    text-align: right;
-}
-.profile-icon {
-    position: absolute;         /* Position relative to the header */
-    top: 40px;                  /* Offset from the top of the header */
-    right: 40px;                /* Offset from the right of the header */
-    width: 125px;                /* Set icon size */
-    height: 125px;
-    border-radius: 50%;         /* Make the icon circular */
-    cursor: pointer;            /* Show pointer cursor on hover */
-    border: 2px solid #FFD700;     /* Outline with a light gray color */
 
+h2 {
+    text-align: center;
+    padding-right: 20px;
+    font-size: 22px;  /* Increased font size */
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Container adjustments for mobile */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .slideshow-container {
+        width: 100%;  /* Ensure slideshow fills full width */
+        height: auto;
+    }
+
+    .image-box {
+        width: 90%; /* Make image box smaller on mobile */
+        margin: 20px auto;
+    }
+
+    .about-us-page .section {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .about-us-page .p-info {
+        padding-right: 0;
+        width: 90%; /* Ensure the paragraph is more responsive */
+    }
+
+    .signup-button,
+    .login-button,
+    .logout-button {
+        width: 80%; /* Make buttons more mobile-friendly */
+        font-size: 22px;  /* Adjust font size on mobile */
+    }
+
+    input {
+        width: 80%; /* Adjust input fields for mobile */
+        font-size: 20px;  /* Adjust font size on mobile */
+    }
+
+    .profile-icon {
+        position: absolute;
+        top: -10px;  /* Move the profile icon up for mobile */
+        right: 15px;  /* Move the profile icon to the right for mobile */
+        width: 80px;  /* Adjust profile icon size for mobile */
+        height: 80px;
+    }
+
+    h1 {
+        font-size: 32px;  /* Adjust heading size for mobile */
+    }
+
+    h2 {
+        font-size: 20px;  /* Adjust h2 size for mobile */
+    }
+
+    .logo {
+        margin-top: 40px;  /* Move logo further down on mobile */
+    }
 }

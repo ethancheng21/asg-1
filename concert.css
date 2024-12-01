@@ -1,0 +1,109 @@
+.logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: black;
+    color: #FFB70D; /* Set text color to gold for better contrast */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+
+.profile-icon {
+    position: absolute;         /* Position relative to the header */
+    top: 40px;                  /* Offset from the top of the header */
+    right: 40px;                /* Offset from the right of the header */
+    width: 125px;               /* Set icon size */
+    height: 125px;
+    border-radius: 50%;         /* Make the icon circular */
+    cursor: pointer;            /* Show pointer cursor on hover */
+    border: 2px solid #FFD700;  /* Outline with a gold color */
+}
+/* Search Bar */
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+}
+
+/* Table Styling */
+#concert-table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#concert-table th, #concert-table td {
+    padding: 10px;
+    border: 1px solid #FFD700;
+    text-align: center;
+}
+
+#concert-table th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+#concert-table tr:hover {
+    background-color: #444;
+}
+
+#concert-table button {
+    background-color: #FFD700;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+#concert-table button:hover {
+    background-color: #FFC107;
+}
+
+/* Seating Dropdown and Quantity Styling */
+.select-seating, .quantity-input {
+    padding: 6px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #FFD700;
+}
+
+.select-seating {
+    margin-right: 10px;
+}
+.view-cart-button {
+    background-color: #FFD700;
+    color: black;
+    padding: 8px 16px; /* Reduced padding for smaller size */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px; /* Smaller font size */
+    font-weight: bold;
+    display: block;
+    margin: 10px auto; /* Adjusted margin for spacing */
+    width: fit-content; /* Ensures the button size adjusts to content */
+}
+
+.view-cart-button:hover {
+    background-color: #FFC107; /* Lighter gold color on hover */
+}
+h2 {
+    text-align: right;
+    padding-right: 20px;
+}

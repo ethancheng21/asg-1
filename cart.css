@@ -1,0 +1,85 @@
+/* Body Background and Text Color */
+body {
+    background-color: black;  /* Black background */
+    color: #FFB70D;  /* Gold text color */
+    font-family: 'Bebas Neue', sans-serif;  /* Font family for the entire page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Styling */
+.logo {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* Profile Icon Styling */
+.profile-icon {
+    position: absolute;         /* Position relative to the header */
+    top: 40px;                  /* Offset from the top of the header */
+    right: 40px;                /* Offset from the right of the header */
+    width: 125px;               /* Set icon size */
+    height: 125px;
+    border-radius: 50%;         /* Make the icon circular */
+    cursor: pointer;            /* Show pointer cursor on hover */
+    border: 2px solid #FFD700;  /* Outline with a gold color */
+}
+
+/* Cart Container Styling */
+#cart-container {
+    width: 80%;  /* Restrict the width of the cart */
+    max-width: 1000px;  /* Max width to prevent it from stretching too far on large screens */
+    margin: 50px auto;
+    text-align: center; /* Center the content */
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: flex;
+    justify-content: space-between;  /* Space between item name and price */
+    margin: 10px 0;  /* Space between items */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;  /* Set to full width of the container */
+    text-align: left; /* Align text to the left within each item */
+}
+
+/* Total Price Styling */
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFB70D;
+    margin-top: 20px; /* Add space above the total */
+}
+
+/* Clear Cart Button Styling */
+#clear-cart-button {
+    background-color: #FFB70D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#clear-cart-button:hover {
+    background-color: #FFD700;
+}
+
+/* General Styling for Cart */
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: right;
+    padding-right: 20px;
+}

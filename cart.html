@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart Page</title>
+</head>
+<body>
+    <!-- Logo and Profile Icon -->
+    <div class="header">
+        <a href="index.html" onclick="loadPageData()"> <!-- Add loadPageData() if needed -->
+            <img src="c:/Users/ethan/Downloads/kanye-west-bear-logo.png" class="logo">
+        </a>
+        <img id="profile-icon" src="c:/Users/ethan/Downloads/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-illustration-vector.jpg" class="profile-icon">
+    </div>
+    <!-- Cart Container -->
+    <div id="cart-container">
+        <h1>Your Cart</h1>
+
+        <!-- Cart Item List (dynamically populated) -->
+        <div id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </div>
+
+        <!-- Total Price -->
+        <div class="total-price">
+            Total: $<span id="total-price">0.00</span>
+        </div>
+
+        <!-- Clear Cart Button -->
+        <button id="clear-cart-button" onclick="clearCart()">Clear Cart</button>
+    </div>
+    <h2> ©2024 UMG Records All Rights Reserved </h2>
+
+    <script src="cart.js"></script>
+</body>
+</html>
