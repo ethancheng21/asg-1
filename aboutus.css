@@ -1,0 +1,219 @@
+body {
+    background-color: black;
+    color: #FFB70D; /* Set text color to gold for better contrast */
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Layout */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+
+.logo {
+    width: 800px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.profile-icon {
+    position: absolute;
+    top: -15px;
+    right: 15px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #FFD700;
+}
+
+/* Slides and navigation buttons */
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.arrow-button {
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFB70D;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Section Layout */
+.section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+/* Image Box Styling */
+.image-box {
+    flex: 1;
+    width: 35%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-box p {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #FFB70D;
+}
+
+/* Paragraph info */
+.p-info {
+    flex: 2;
+    width: auto;
+    max-width: 700px;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+    padding-right: 20px;
+}
+
+/* Social icons container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    transition: transform 0.2s;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* Hover effect */
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Heading styles */
+h2 {
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* Links styles */
+a {
+    color: #FFB70D;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFD700;
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    /* Header Layout for Mobile */
+    .profile-icon {
+        top: -10px; /* Adjust this value */
+        right: 10px; /* Reduce this value */
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Section Layout for Mobile */
+    .section {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+        gap: 20px;  /* Maintain consistent gap */
+        margin-bottom: 40px;
+    }
+
+    /* Image Box Layout for Mobile */
+    .image-box {
+        width: 100%; /* Make the image box take full width */
+        margin: 0;   /* Reset any unnecessary centering */
+        position: relative;
+        padding-bottom: 30px;
+        padding-left: 10px;
+    }
+
+    .image-box img {
+        width: 100%;
+        max-height: 300px; /* Set max height for control */
+    }
+
+    .image-box p {
+        font-size: 14px;  /* Adjust font size for mobile */
+        margin-top: 10px;
+    }
+
+    /* Paragraph Info for Mobile */
+    .p-info {
+        font-size: 20px; /* Adjust font size */
+        max-width: 400px; /* Limit max width */
+        text-align: center; /* Center align text */
+        padding-right: 20px;
+    }
+
+    /* Social Icons for Mobile */
+    .social-icons {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;  /* Ensure social icons are on top */
+        gap: 5px;     /* Reduce gap between icons */
+    }
+
+    .social-icons img {
+        width: 20px;  /* Adjust icon size */
+        height: 20px;
+    }
+
+    /* Heading Adjustments for Mobile */
+    h2 {
+        font-size: 18px; /* Adjust font size */
+    }
+}
